@@ -1,68 +1,61 @@
 const Plane = require('./Plane');
 
-class experimentalPlane   extends Plane
-{
+class ExperimentalPlane extends Plane {
 
-    constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity, type, classificationLevel)  {
+    constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity, experimentalTypes, classificationLevel)  {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
-        this._model = model;
-        this._maxSpeed = maxSpeed;
-        this._maxFlightDistance = maxFlightDistance;
-        this._maxLoadCapacity = maxLoadCapacity;
         this._type = type;
         this._classificationLevel = classificationLevel;
-
     }
 
-
-    get model()
+    getModel()
     {
         return this._model;
     }
 
-    set model(value) {
+    setModel(value) {
         this._model = value;
     }
 
-    get maxSpeed() {
+    getMaxSpeed() {
         return this._maxSpeed;
     }
 
-    set maxSpeed(value) {
+    setMaxSpeed(value) {
         this._maxSpeed = value;
     }
 
-    get maxFlightDistance() {
+    getMaxFlightDistance() {
         return this._maxFlightDistance;
     }
 
-    set maxFlightDistance(value) {
+    setMaxFlightDistance(value) {
         this._maxFlightDistance = value;
     }
 
-    get maxLoadCapacity() {
+    getMaxLoadCapacity() {
         return this._maxLoadCapacity;
     }
 
-    set maxLoadCapacity(value) {
+    setMaxLoadCapacity(value) {
         this._maxLoadCapacity = value;
     }
 
-    get type() {
-        return this._type;
+    getExperimentalType() {
+        return this._experimentalTypes;
     }
 
-    set type(value) {
-        this._type = value;
+    setExperimentalType(value) {
+        this._experimentalTypes = value;
     }
 
-    get classificationLevel() {
+    getClassificationLevel() {
         return this._classificationLevel;
     }
 
-    set classificationLevel(value) {
+    setClassificationLevel(value) {
         this._classificationLevel = value;
     }
 }
 
-module.exports = experimentalPlane
+module.exports = ExperimentalPlane
