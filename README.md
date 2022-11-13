@@ -1,1 +1,2 @@
-# lab_8_tesring
+# aircompany
+Project with "code smells" for refactoring
